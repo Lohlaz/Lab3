@@ -20,9 +20,21 @@ def get_employees_by_age_range(age_lower_limit, age_upper_limit):
 
 def calculate_average_salary():
     total = 0
-    average = 0
+    n= 6
+    for item in employee_data:
+        if n != 0:
+            total = total + item["salary"]
+            n-1
 
-    #add your implementation to calculate here
+    result = total/6
+    return result
+
+
+
+
+
+
+
 
 
     return average
